@@ -1,0 +1,180 @@
+@import url('https://fonts.cdnfonts.com/css/museo-sans-rounded');
+
+:root {
+  --primary: #002dbb;
+  --gray: #68788a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Museo Sans Rounded', sans-serif;                                  
+}
+
+body {
+  position: relative;
+}
+
+h1, h2, h3 {
+  all: unset;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: drop-shadow(0 10px 15px rgb(0 0 0 / 0.3));
+  transition-duration: 300ms;
+}
+
+.secButton {
+  background-color: white;
+  color: var(--primary);
+  padding: 12px 16px;
+  border-radius: 28px;
+}
+
+.primButton {
+  background-color: var(--primary);
+  color: white;
+  width: 100%;
+  border-radius: 28px;
+  padding: 12px 16px
+}
+
+.firstNav {
+  background-color: var(--primary);
+  color: white;
+  padding: 8px 0;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.secNav {
+  background-color: white;
+  padding: 8px 0;
+  position: sticky;
+  top: 0px;
+  font-weight: 600;
+  letter-spacing: 0.04rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .navContainer,
+  .container {
+    margin: auto 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 1440) {
+  .navContainer,
+  .container {
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.navContainer > ul {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.carousel {
+  background-image: url("https://web-xlrvmnpr.s3.ap-southeast-1.amazonaws.com/images/post/d56a6e6b-0a5f-472c-8498-9b46fba0b069.jpg");
+  height: 420px;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+}
+
+.carouselText {
+  position: absolute;
+  bottom: 48px;
+  color: white;
+}
+
+.floatChat {
+  position: fixed;
+  z-index: 50;
+  right: 32px;
+  bottom: 16px;
+  cursor: pointer;
+}
+
+.content-akses {
+  display: flex;
+  gap: 28px;
+  padding: 90px 0 56px;
+  background-color: white;
+}
+
+.content-akses > h2 {
+  font-size: 28px;
+  max-width: 248px;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+
+}
+
+.content-akses > ul {
+  gap: 40px;
+}
+
+.content-akses > ul > li {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.content-akses > ul > li > div:hover {
+  background-color: beige;
+  transition-duration: 300ms;
+}
+
+.section-mudah {
+  background-image: url("https://web-xlrvmnpr.s3.ap-southeast-1.amazonaws.com/images/post/575d4393-3794-4821-9291-761ea28ef7cb.jpg");
+  background-size: cover;
+  padding: 48px 0;
+}
+
+.content-mudah {
+  display: flex;
+  gap: 28px;
+  position: relative;
+  overflow: hidden;
+}
+
+.mudah-card {
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  width: 268px;
+  display: block;
+}
+
+.mudah-card > nav {
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 12px;
+}
