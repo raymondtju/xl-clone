@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store | XL Axiata</title>
+
+    <link rel="stylesheet" href="./css/store.css" />
+    <script src="./components/nav.js"></script>
+
+    <!-- Icon -->
+    <link rel="stylesheet" href="./assets/icon/css/all.min.css">
+  </head>
+  <body>
+    <nav class="navbar-store">
+      <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="XL Brand/XL"><g id="XL_logo_2016 Copy"><g id="#00c89fff"><path id="path6" d="M36.9458 13.8206C37.357 13.5581 37.8596 13.3315 38.3535 13.4754C38.792 13.6417 38.9437 14.155 38.933 14.5847C38.9349 19.9456 38.9339 25.3064 38.933 30.6672C44.0041 30.6672 49.0752 30.6643 54.1463 30.6682C54.5508 30.6663 55.0378 30.8024 55.1973 31.2165C55.3645 31.7085 55.1108 32.2092 54.8871 32.6379C53.5591 35.0821 52.1717 37.4942 50.7639 39.8927C50.3459 40.4497 49.7946 40.9689 49.0995 41.1371C48.521 41.2761 47.9221 41.2713 47.332 41.28C45.6491 41.2858 43.9671 41.282 42.2842 41.2829C41.5521 41.28 40.7287 41.314 40.1512 41.8245C39.6709 42.2833 39.7302 43.0252 39.9178 43.6065C40.3271 44.8481 41.1078 45.9165 41.6853 47.0783C41.0903 46.6797 40.5148 46.252 39.9655 45.7931C38.2563 44.2813 36.692 42.6022 35.3698 40.7395C31.4041 35.2435 29.3527 28.5186 28.9794 21.7889C28.9142 20.3131 29.518 18.6982 30.8383 17.9233C32.8751 16.5564 34.9109 15.1895 36.9458 13.8206Z" fill="#00C89F"></path></g><g id="#002cbaff"><path id="path9" d="M9.49153 24.5691C9.70153 24.1286 10.2314 23.9925 10.6796 24.0003C13.7586 24.0013 16.8376 24.0003 19.9167 24.0013C20.4504 24.012 21.0124 24.0334 21.4926 24.2939C21.9817 24.5584 22.3501 24.9852 22.7244 25.3848C23.8483 26.6632 24.9693 27.9436 26.0922 29.2221C26.1564 29.2892 26.2711 29.4389 26.3606 29.3096C26.9789 28.6398 27.5642 27.9388 28.1786 27.2641C28.6919 30.5346 29.9568 33.6584 31.6669 36.4817C33.8457 40.0498 36.7089 43.1813 39.9658 45.7927C40.5151 46.2516 41.0907 46.6793 41.6857 47.078C42.0571 47.4834 42.4119 47.9053 42.7687 48.3234C43.0371 48.6345 43.2199 49.0846 43.0517 49.4861C42.8679 49.8848 42.3983 50.0471 41.9861 50.0413C38.876 50.0442 35.7658 50.0413 32.6567 50.0432C32.1346 50.0432 31.5872 50.0286 31.1108 49.7895C30.6111 49.5309 30.2271 49.108 29.8508 48.6996C28.7454 47.4406 27.639 46.1816 26.5365 44.9196C26.4529 44.8195 26.3518 44.7368 26.2439 44.6659C25.0714 45.9784 23.9232 47.3132 22.7546 48.6296C22.3715 49.0555 21.9787 49.4949 21.4693 49.773C20.9949 50.0218 20.4465 50.0432 19.9235 50.0432C16.8104 50.0413 13.6974 50.0442 10.5853 50.0423C10.1381 50.0549 9.60625 49.8643 9.46528 49.3986C9.32917 48.9232 9.61792 48.4818 9.92319 48.1474C13.1519 44.4345 16.3856 40.7255 19.6318 37.0281C16.3807 33.2841 13.0975 29.5682 9.85222 25.8193C9.54889 25.4907 9.3175 25.0163 9.49153 24.5691Z" fill="#002CBA"></path></g></g></g></svg>
+      <div class="number-step">
+        <span class="active">1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+      </div>
+    </nav>
+
+    <main>
+      <div class="content">
+        <div class="control">
+          <a href="./index.html" class="td-none">
+            <i class="fa-solid fa-chevron-left"></i>
+            <p class="text-sm dark">Kembali ke halaman utama</p>
+          </a>
+        </div>
+        <div class="number-type">
+         <p class="text-lg">Pilih Tipe Nomor Perdana</p>
+          <div class="tab">
+            <button class="tablinks text-md" onclick="typeNumber(event, 'simCard')" id="defaultOpen">Kartu Sim</button>
+            <button class="tablinks text-md" onclick="typeNumber(event, 'eSim')">eSIM</button>
+          </div>
+
+          <div id="simCard" class="tabcontent">
+            <p class="text-sm bor-bot">Dapatkan kartu SIM fisik yang akan <a href="#" class="fw-bold td-none c-p">dikirim langsung ke rumah Anda.</a></p>
+            <div class="blue-box">
+              <div class="text-box">
+                <div class="mini-title text-sm c-p">
+                  <span class="fw-bold">Nikmati bonus double kuota </span>
+                  <img src="./assets/img/label.svg" width="20px" alt="">
+                </div>
+                <div class="text-sm c-p d-grid">
+                  <span>Hanya bagi pelanggan yang HP nya belum pakai XL.</span>
+                  <span>Cek imei HP anda disini</span>
+                </div>
+              </div>
+              <div class="imei-checking">
+                <button>Cek IMEI Anda</button>
+              </div>
+            </div>
+            <div class="choose-packet">
+              <p class="text-lg">Pilih Paket Anda</p>
+              <div class="packet-box">
+                <div class="label">
+                  <span class="text-sm">Discount 31%</span>
+                  <span class="text-sm fw-bold">Double Kuota</span>
+                </div>
+                <input class="radio" type="radio" checked  name="radio" id="" />
+                <div class="packet">
+                  <div class="icon">
+                    <img src="./assets/img/logo-xl.svg" alt="" />
+                  </div>
+                  <div class="packet-name">
+                    <span class="text-md">Xtra Combo Flex XL</span>
+                    <span class="text-3xl">111GB</span>
+                  </div>
+                </div>
+                <div class="bor-bot" style="margin-left:20px; margin-right: 20px;"></div>
+                <div class="footer-packet" style="margin-left:20px; margin-right: 20px;">
+                  <div class="price">
+                    <span class="text-lg c-p" style="font-size: 18px;">Rp 60.000</span>
+                    <span class="text-sm fw-bold"><s>Rp 87.000</s></span>
+                  </div>
+                  <div class="dropdown">
+                    <div class="dropdown-content">
+                      <p>Engga ah, mager bikin dropdown nya</p>
+                    </div>
+                    <div class="dropdown-arrow"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="packet-box">
+                <div class="label">
+                  <span class="text-sm">Discount 31%</span>
+                  <span class="text-sm fw-bold">Double Kuota</span>
+                </div>
+                <input class="radio" type="radio" checked  name="radio" id="" />
+                <div class="packet">
+                  <div class="icon">
+                    <img src="./assets/img/logo-xl.svg" alt="" />
+                  </div>
+                  <div class="packet-name">
+                    <span class="text-md">Xtra Combo Flex XL</span>
+                    <span class="text-3xl">111GB</span>
+                  </div>
+                </div>
+                <div class="bor-bot" style="margin-left:20px; margin-right: 20px;"></div>
+                <div class="footer-packet" style="margin-left:20px; margin-right: 20px;">
+                  <div class="price">
+                    <span class="text-lg c-p" style="font-size: 18px;">Rp 60.000</span>
+                    <span class="text-sm fw-bold"><s>Rp 87.000</s></span>
+                  </div>
+                  <div class="dropdown">
+                    <div class="dropdown-content">
+                      <p>Engga ah, mager bikin dropdown nya</p>
+                    </div>
+                    <div class="dropdown-arrow"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="packet-box">
+                <div class="label">
+                  <span class="text-sm">Discount 31%</span>
+                  <span class="text-sm fw-bold">Double Kuota</span>
+                </div>
+                <input class="radio" type="radio" checked  name="radio" id="" />
+                <div class="packet">
+                  <div class="icon">
+                    <img src="./assets/img/logo-xl.svg" alt="" />
+                  </div>
+                  <div class="packet-name">
+                    <span class="text-md">Xtra Combo Flex XL</span>
+                    <span class="text-3xl">111GB</span>
+                  </div>
+                </div>
+                <div class="bor-bot" style="margin-left:20px; margin-right: 20px;"></div>
+                <div class="footer-packet" style="margin-left:20px; margin-right: 20px;">
+                  <div class="price">
+                    <span class="text-lg c-p" style="font-size: 18px;">Rp 60.000</span>
+                    <span class="text-sm fw-bold"><s>Rp 87.000</s></span>
+                  </div>
+                  <div class="dropdown">
+                    <div class="dropdown-content">
+                      <p>Engga ah, mager bikin dropdown nya</p>
+                    </div>
+                    <div class="dropdown-arrow"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="packet-box">
+                <div class="label">
+                  <span class="text-sm">Discount 31%</span>
+                  <span class="text-sm fw-bold">Double Kuota</span>
+                </div>
+                <input class="radio" type="radio" checked  name="radio" id="" />
+                <div class="packet">
+                  <div class="icon">
+                    <img src="./assets/img/logo-xl.svg" alt="" />
+                  </div>
+                  <div class="packet-name">
+                    <span class="text-md">Xtra Combo Flex XL</span>
+                    <span class="text-3xl">111GB</span>
+                  </div>
+                </div>
+                <div class="bor-bot" style="margin-left:20px; margin-right: 20px;"></div>
+                <div class="footer-packet" style="margin-left:20px; margin-right: 20px;">
+                  <div class="price">
+                    <span class="text-lg c-p" style="font-size: 18px;">Rp 60.000</span>
+                    <span class="text-sm fw-bold"><s>Rp 87.000</s></span>
+                  </div>
+                  <div class="dropdown">
+                    <div class="dropdown-content">
+                      <p>Engga ah, mager bikin dropdown nya</p>
+                    </div>
+                    <div class="dropdown-arrow"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="eSim" class="tabcontent">
+            <h3>eSIM</h3>
+            <p>Paris is the capital of France.</p> 
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script src="./assets/icon/js/all.min.js"></script>
+    <script src="./js/tab.js"></script>
+    <script>
+      var dropdown = document.querySelector(".dropdown");
+      dropdown.addEventListener("click", function() {
+        dropdown.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
