@@ -20,6 +20,20 @@ class Navbar extends HTMLElement {
           <div class="container">
             <img src="https://d17e22l2uh4h4n.cloudfront.net/corpweb/pub-xlaxiata/2019-03/xl-logo.png" alt="logo" width="52">
 
+            <div
+              class="hambuger"
+            >
+              <div
+                class="hambuger-child"
+              ></div>
+              <div
+                class="hambuger-child"
+              ></div>
+              <div
+                class="hambuger-child"
+              ></div>
+            </div>
+
             <ul>
               <li>XL Store</li>
               <li>Produk</li>
@@ -35,4 +49,4 @@ class Navbar extends HTMLElement {
   }
 }
 
-customElements.define('c-nav', Navbar);
+customElements.define("c-nav", Navbar);
