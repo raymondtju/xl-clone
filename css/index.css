@@ -3,8 +3,10 @@
 
 :root {
   --primary: #002dbb;
+  --secondary: #A98F97;
   --gray: #68788a;
   --light-green: #00d2a0;
+  --pink: #EE3D96;
 }
 
 * {
@@ -25,7 +27,7 @@ h3 {
 
 h2 {
   font-weight: 600;
-  font-size: 32px;
+  font-size: 36px;
 }
 
 ul {
@@ -60,8 +62,11 @@ section {
 .secButton {
   background-color: white;
   color: var(--primary);
-  padding: 16px 24px;
+  padding: 12px 24px;
   border-radius: 28px;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
 }
 
 .primButton {

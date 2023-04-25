@@ -1,19 +1,35 @@
+nav {
+  /* position: fixed;
+  top: 0;
+  z-index: 100; */
+}
+
+.navbar--fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  transition: all 0.2s ease-in-out;
+}
+
 .firstNav {
   background-color: var(--primary);
   color: white;
   padding: 8px 0;
   font-size: 16px;
   font-weight: 200;
+  z-index: 101;
+  position: relative;
 }
 
 .secNav {
   background-color: white;
   padding: 8px 0;
   margin: auto;
-  position: sticky;
-  top: 0px;
   font-weight: 600;
   letter-spacing: 0.04rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease-in-out;
 }
 
 .secNav ul {
@@ -52,7 +68,7 @@
     flex-direction: row;
     gap: 40px;
   }
-
+  
   .hambuger {
     display: none;
   }

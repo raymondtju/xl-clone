@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="./css/index.css" />
     <script src="./components/nav.js"></script>
+    <script src="./components/footer.js"></script>
   </head>
   <body>
     <div class="floatChat">
@@ -17,9 +18,8 @@
       />
     </div>
 
-    <c-nav></c-nav>
-
     <main>
+      <c-nav></c-nav>
       <div class="carousel">
         <div class="container">
           <div class="carouselText">
@@ -48,7 +48,7 @@
                 ></div>
                 <span>Beli kartu perdana</span>
               </li>
-              <li>
+              <li style="position: relative">
                 <div
                   style="
                     width: 64px;
@@ -60,7 +60,27 @@
                     background-repeat: no-repeat;
                     background-position: center;
                   "
-                ></div>
+                >
+                  <div
+                    style="
+                      position: absolute;
+                      bottom: 24px;
+                      left: 50%;
+                      transform: translateX(-50%);
+                    "
+                  >
+                    <span
+                      style="
+                        font-size: 10px;
+                        color: #fff;
+                        background-color: var(--light-green);
+                        border-radius: 36px;
+                        padding: 6px 16px;
+                      "
+                      >NEW</span
+                    >
+                  </div>
+                </div>
                 <span>Bonus double kuota</span>
               </li>
               <li>
@@ -97,6 +117,11 @@
                 spesial menarik hanya di XL Store
               </p>
               <button class="secButton" style="margin-top: 24px">
+                <img
+                  src="./public/cart.svg"
+                  alt=""
+                  style="margin-right: 12px"
+                />
                 BELANJA SEKARANG
               </button>
             </div>
@@ -125,7 +150,15 @@
                       <span style="font-size: 40px; font-weight: 600"
                         >48.5GB</span
                       >
-                      <span style="padding-left: 12px">30 hari</span>
+                      <span
+                        style="
+                          padding-left: 36px;
+                          font-size: 16px;
+                          display: block;
+                          white-space: nowrap;
+                        "
+                        >30 hari</span
+                      >
                     </div>
                     <hr
                       style="
@@ -137,6 +170,25 @@
                     <span style="text-decoration: line-through; font-size: 14px"
                       >Rp43.000</span
                     >
+                    <span style="position: relative; margin-left: 8px">
+                      <img
+                        src="./public/subtract.svg"
+                        alt="badge"
+                        style="position: absolute"
+                      />
+                      <span
+                        style="
+                          z-index: 10;
+                          position: absolute;
+                          color: white;
+                          font-size: 12px;
+                          top: 4px;
+                          bottom: 0;
+                          left: 16px;
+                        "
+                        >30%</span
+                      >
+                    </span>
                     <p
                       style="
                         font-size: 28px;
@@ -173,7 +225,15 @@
                       <span style="font-size: 40px; font-weight: 600"
                         >48.5GB</span
                       >
-                      <span style="padding-left: 12px">30 hari</span>
+                      <span
+                        style="
+                          padding-left: 36px;
+                          font-size: 16px;
+                          display: block;
+                          white-space: nowrap;
+                        "
+                        >30 hari</span
+                      >
                     </div>
                     <hr
                       style="
@@ -185,6 +245,26 @@
                     <span style="text-decoration: line-through; font-size: 14px"
                       >Rp43.000</span
                     >
+                    <span style="position: relative; margin-left: 8px">
+                      <img
+                        src="./public/subtract.svg"
+                        alt="badge"
+                        style="position: absolute"
+                      />
+                      <span
+                        style="
+                          z-index: 10;
+                          position: absolute;
+                          color: white;
+                          font-size: 12px;
+                          top: 4px;
+                          bottom: 0;
+                          left: 16px;
+                          white-space: nowrap;
+                        "
+                        >30%</span
+                      >
+                    </span>
                     <p
                       style="
                         font-size: 28px;
@@ -221,7 +301,15 @@
                       <span style="font-size: 40px; font-weight: 600"
                         >48.5GB</span
                       >
-                      <span style="padding-left: 12px">30 hari</span>
+                      <span
+                        style="
+                          padding-left: 36px;
+                          font-size: 16px;
+                          display: block;
+                          white-space: nowrap;
+                        "
+                        >30 hari</span
+                      >
                     </div>
                     <hr
                       style="
@@ -233,6 +321,25 @@
                     <span style="text-decoration: line-through; font-size: 14px"
                       >Rp43.000</span
                     >
+                    <span style="position: relative; margin-left: 8px">
+                      <img
+                        src="./public/subtract.svg"
+                        alt="badge"
+                        style="position: absolute"
+                      />
+                      <span
+                        style="
+                          z-index: 10;
+                          position: absolute;
+                          color: white;
+                          font-size: 12px;
+                          top: 4px;
+                          bottom: 0;
+                          left: 16px;
+                        "
+                        >30%</span
+                      >
+                    </span>
                     <p
                       style="
                         font-size: 28px;
@@ -256,105 +363,154 @@
       <section class="section-rdeals">
         <div class="container">
           <div class="content-rdeals">
-            <div class="left-content"">
-            <h2>Ramadan Deals telah tiba!</h2>
-            <p>
-              Temukan berbagai diskon paket internet favorit kamu dan nikmati
-              berbagai bonus menariknya!
-            </p>
-            <button class="primButton" style="margin-top: 24px">
-              Cek Sekarang
-            </button>
-          </div>
+            <div class="left-content" style="margin: auto 0">
+              <h2>Ramadan Deals telah tiba!</h2>
+              <p>
+                Temukan berbagai diskon paket internet favorit kamu dan nikmati
+                berbagai bonus menariknya!
+              </p>
+              <button class="primButton" style="margin-top: 24px">
+                Cek Sekarang
+              </button>
 
-          <div style="overflow-x: auto">
-            <div style="display: inline-flex; gap: 20px">
-              <div class="rdeals-card">
-                <img
-                  src="https://web-xlrvmnpr.s3.ap-southeast-1.amazonaws.com/images/post/fcce9e3c-8dc4-4194-b812-a35f1fc9bfbd.jpg"
-                  alt=""
-                />
-                <div class="rdeals-card-detail">
-                  <h3 style="font-weight: 600; font-size: 28px">
-                    Xtra Combo Flex
-                  </h3>
-                  <p style="padding-top: 8px">
-                    Paket Xtra Combo Flex bebas pilih bonus internetmu, harga
-                    mulai 15.000 di toko pulsa terdekat. Spesial untuk pengguna
-                    baru XL. Bonus kuota aktivasi hingga 4 bulan.
-                  </p>
-                  <button
-                    class="secButton"
-                    style="width: 100%; margin-top: 20px"
+              <div style="padding-top: 36px; gap: 16px; display: flex">
+                <div
+                  style="
+                    border-radius: 100%;
+                    background-color: var(--light-green);
+                    width: 40px;
+                    height: 40px;
+                    display: inline-block;
+                    padding: 4px;
+                    box-sizing: border-box;
+                  "
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
                   >
-                    Lihat Detail
-                  </button>
+                    <path
+                      fill="#fff"
+                      d="M15.41 16.58L10.83 12l4.58-4.59L14 6l-6 6l6 6l1.41-1.42Z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  style="
+                    border-radius: 100%;
+                    background-color: var(--light-green);
+                    width: 40px;
+                    height: 40px;
+                    display: inline-block;
+                    padding: 4px;
+                    box-sizing: border-box;
+                  "
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="#fff"
+                      d="M8.59 16.58L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.42Z"
+                    />
+                  </svg>
                 </div>
               </div>
-              <div class="rdeals-card">
-                <img
-                  src="https://web-xlrvmnpr.s3.ap-southeast-1.amazonaws.com/images/post/fcce9e3c-8dc4-4194-b812-a35f1fc9bfbd.jpg"
-                  alt=""
-                />
-                <div class="rdeals-card-detail">
-                  <h3 style="font-weight: 600; font-size: 28px">
-                    Xtra Combo Flex
-                  </h3>
-                  <p style="padding-top: 8px">
-                    Paket Xtra Combo Flex bebas pilih bonus internetmu, harga
-                    mulai 15.000 di toko pulsa terdekat. Spesial untuk pengguna
-                    baru XL. Bonus kuota aktivasi hingga 4 bulan.
-                  </p>
-                  <button
-                    class="secButton"
-                    style="width: 100%; margin-top: 20px"
-                  >
-                    Lihat Detail
-                  </button>
+            </div>
+            <div style="overflow-x: auto">
+              <div style="display: inline-flex; gap: 20px">
+                <div class="rdeals-card">
+                  <img
+                    src="https://web-xlrvmnpr.s3.ap-southeast-1.amazonaws.com/images/post/fcce9e3c-8dc4-4194-b812-a35f1fc9bfbd.jpg"
+                    alt=""
+                  />
+                  <div class="rdeals-card-detail">
+                    <h3 style="font-weight: 600; font-size: 28px">
+                      Xtra Combo Flex
+                    </h3>
+                    <p style="padding-top: 8px">
+                      Paket Xtra Combo Flex bebas pilih bonus internetmu, harga
+                      mulai 15.000 di toko pulsa terdekat. Spesial untuk
+                      pengguna baru XL. Bonus kuota aktivasi hingga 4 bulan.
+                    </p>
+                    <button
+                      class="secButton"
+                      style="width: 100%; margin-top: 20px"
+                    >
+                      Lihat Detail
+                    </button>
+                  </div>
                 </div>
-              </div>
-              <div class="rdeals-card">
-                <img
-                  src="https://web-xlrvmnpr.s3.ap-southeast-1.amazonaws.com/images/post/fcce9e3c-8dc4-4194-b812-a35f1fc9bfbd.jpg"
-                  alt=""
-                />
-                <div class="rdeals-card-detail">
-                  <h3 style="font-weight: 600; font-size: 28px">
-                    Xtra Combo Flex
-                  </h3>
-                  <p style="padding-top: 8px">
-                    Paket Xtra Combo Flex bebas pilih bonus internetmu, harga
-                    mulai 15.000 di toko pulsa terdekat. Spesial untuk pengguna
-                    baru XL. Bonus kuota aktivasi hingga 4 bulan.
-                  </p>
-                  <button
-                    class="secButton"
-                    style="width: 100%; margin-top: 20px"
-                  >
-                    Lihat Detail
-                  </button>
+                <div class="rdeals-card">
+                  <img
+                    src="https://web-xlrvmnpr.s3.ap-southeast-1.amazonaws.com/images/post/fcce9e3c-8dc4-4194-b812-a35f1fc9bfbd.jpg"
+                    alt=""
+                  />
+                  <div class="rdeals-card-detail">
+                    <h3 style="font-weight: 600; font-size: 28px">
+                      Xtra Combo Flex
+                    </h3>
+                    <p style="padding-top: 8px">
+                      Paket Xtra Combo Flex bebas pilih bonus internetmu, harga
+                      mulai 15.000 di toko pulsa terdekat. Spesial untuk
+                      pengguna baru XL. Bonus kuota aktivasi hingga 4 bulan.
+                    </p>
+                    <button
+                      class="secButton"
+                      style="width: 100%; margin-top: 20px"
+                    >
+                      Lihat Detail
+                    </button>
+                  </div>
                 </div>
-              </div>
-              <div class="rdeals-card">
-                <img
-                  src="https://web-xlrvmnpr.s3.ap-southeast-1.amazonaws.com/images/post/fcce9e3c-8dc4-4194-b812-a35f1fc9bfbd.jpg"
-                  alt=""
-                />
-                <div class="rdeals-card-detail">
-                  <h3 style="font-weight: 600; font-size: 28px">
-                    Xtra Combo Flex
-                  </h3>
-                  <p style="padding-top: 8px">
-                    Paket Xtra Combo Flex bebas pilih bonus internetmu, harga
-                    mulai 15.000 di toko pulsa terdekat. Spesial untuk pengguna
-                    baru XL. Bonus kuota aktivasi hingga 4 bulan.
-                  </p>
-                  <button
-                    class="secButton"
-                    style="width: 100%; margin-top: 20px"
-                  >
-                    Lihat Detail
-                  </button>
+                <div class="rdeals-card">
+                  <img
+                    src="https://web-xlrvmnpr.s3.ap-southeast-1.amazonaws.com/images/post/fcce9e3c-8dc4-4194-b812-a35f1fc9bfbd.jpg"
+                    alt=""
+                  />
+                  <div class="rdeals-card-detail">
+                    <h3 style="font-weight: 600; font-size: 28px">
+                      Xtra Combo Flex
+                    </h3>
+                    <p style="padding-top: 8px">
+                      Paket Xtra Combo Flex bebas pilih bonus internetmu, harga
+                      mulai 15.000 di toko pulsa terdekat. Spesial untuk
+                      pengguna baru XL. Bonus kuota aktivasi hingga 4 bulan.
+                    </p>
+                    <button
+                      class="secButton"
+                      style="width: 100%; margin-top: 20px"
+                    >
+                      Lihat Detail
+                    </button>
+                  </div>
+                </div>
+                <div class="rdeals-card">
+                  <img
+                    src="https://web-xlrvmnpr.s3.ap-southeast-1.amazonaws.com/images/post/fcce9e3c-8dc4-4194-b812-a35f1fc9bfbd.jpg"
+                    alt=""
+                  />
+                  <div class="rdeals-card-detail">
+                    <h3 style="font-weight: 600; font-size: 28px">
+                      Xtra Combo Flex
+                    </h3>
+                    <p style="padding-top: 8px">
+                      Paket Xtra Combo Flex bebas pilih bonus internetmu, harga
+                      mulai 15.000 di toko pulsa terdekat. Spesial untuk
+                      pengguna baru XL. Bonus kuota aktivasi hingga 4 bulan.
+                    </p>
+                    <button
+                      class="secButton"
+                      style="width: 100%; margin-top: 20px"
+                    >
+                      Lihat Detail
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -447,6 +603,10 @@
           </div>
         </div>
       </section>
+
+      <c-foot></c-foot>
     </main>
   </body>
+
+  <script src="./js/script.js"></script>
 </html>

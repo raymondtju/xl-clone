@@ -1,3 +1,5 @@
+@import "./component/footer.module.css";
+
 .carousel {
   background-image: url("https://web-xlrvmnpr.s3.ap-southeast-1.amazonaws.com/images/post/d56a6e6b-0a5f-472c-8498-9b46fba0b069.jpg");
   height: 420px;
@@ -35,6 +37,7 @@
 
 .left-content {
   max-width: 390px;
+  width: 100%;
 }
 
 .left-content p {
@@ -43,6 +46,11 @@
   line-height: 28px;
   color: var(--gray);
   font-weight: 100;
+}
+
+.left-content h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .content-akses > ul {
@@ -54,7 +62,7 @@
   flex-direction: column;
   justify-items: center;
   align-items: center;
-  gap: 4px;
+  gap: 12px;
   cursor: pointer;
 }
 
@@ -79,7 +87,6 @@
   background-color: white;
   border-radius: 16px;
   overflow: hidden;
-  width: 268px;
   display: block;
 }
 
@@ -88,7 +95,8 @@
   color: white;
   text-align: center;
   padding: 8px 0;
-  font-size: 12px;
+  font-size: 16px;
+  z-index: 0;
 }
 
 .content-rdeals {
@@ -160,6 +168,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 0;
+  display: block;
 }
 
 .content-pelajari {

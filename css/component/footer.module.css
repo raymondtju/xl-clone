@@ -1,0 +1,27 @@
+footer {
+  border-radius: 20px 20px 0 0;
+  background-color: var(--primary);
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer-card {
+  overflow: hidden;
+  width: 20%;
+  max-width: 20%;
+}
+
+.footer-card > h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.footer-card > ul {
+  padding-top: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.footer-card li {
+  padding: 8px 0;
+  font-weight: 300;
+}
