@@ -28,10 +28,21 @@
 
 .content-akses > h2 {
   font-size: 28px;
-  max-width: 248px;
+  max-width: 390px;
   font-weight: 600;
   letter-spacing: 0.05rem;
+}
 
+.left-content {
+  max-width: 390px;
+}
+
+.left-content p {
+  padding-top: 12px;
+  font-size: 1.125rem;
+  line-height: 28px;
+  color: var(--gray);
+  font-weight: 100;
 }
 
 .content-akses > ul {
@@ -55,7 +66,6 @@
 .section-mudah {
   background-image: url("https://web-xlrvmnpr.s3.ap-southeast-1.amazonaws.com/images/post/575d4393-3794-4821-9291-761ea28ef7cb.jpg");
   background-size: cover;
-  padding: 48px 0;
 }
 
 .content-mudah {
@@ -88,10 +98,6 @@
   overflow: hidden;
 }
 
-.section-rdeals {
-  padding: 48px 0;
-}
-
 .rdeals-card {
   border-radius: 20px;
   overflow: hidden;
@@ -116,4 +122,52 @@
   object-position: top;
   border-radius: 0 0 20px 20px;
   box-sizing: border-box;
+}
+
+.section-gterpopuler {
+  background-image: url("https://web-xlrvmnpr.s3.ap-southeast-1.amazonaws.com/images/post/d2b19e84-3d76-476d-a33f-8fdd6aaf728b.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content-gterpopuler {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  position: relative;
+  overflow: hidden;
+}
+
+.games-card {
+  overflow: hidden;
+}
+
+.games-card > img {
+  width: 100%;
+  border-radius: 16px;
+  height: 262px;
+  width: 197px;
+}
+
+.games-card > p {
+  color: white;
+  font-size: 20px;
+  padding-top: 8px;
+}
+
+.section-pelajari {
+  background-image: url("https://www.xl.co.id/_next/static/images/img_bg-download-apps-d45d562fee1e42a8a8e77f06013e6653.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 0;
+}
+
+.content-pelajari {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-pelajari img {
+  width: 50%;
+  align-content: end;
 }
