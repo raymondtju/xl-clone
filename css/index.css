@@ -102,3 +102,12 @@ section {
     align-items: center;
   }
 }
+
+.slider-r-deals {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+}
+
+.slider-r-deals::-webkit-scrollbar {
+  display: none;
+}
