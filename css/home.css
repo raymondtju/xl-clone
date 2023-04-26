@@ -1,11 +1,24 @@
 @import "./component/footer.module.css";
 
 .carousel {
-  background-image: url("https://web-xlrvmnpr.s3.ap-southeast-1.amazonaws.com/images/post/d56a6e6b-0a5f-472c-8498-9b46fba0b069.jpg");
-  height: 420px;
+  height: 100%;
   width: 100%;
-  background-size: cover;
   position: relative;
+  overflow: hidden;
+}
+
+.carouselImage img {
+  height: 100%;
+  width: 100%;
+  /* opacity: 0;  */
+  /* transition: opacity 500ms ease 0s, visibility 500ms ease 0s; */
+  transition: all 0.2s ease-in-out;
+}
+
+.carouselImage--exit {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 500ms ease 0s, visibility 500ms ease 0s;
 }
 
 .carouselText {
