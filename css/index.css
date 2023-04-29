@@ -101,12 +101,20 @@ section {
   align-items: center;
 }
 
+.container-custom {
+  margin: auto 12px;
+}
+
 @media only screen and (min-width: 768px) {
   .container {
     margin: auto 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .container-custom {
+    margin: auto 80px;
   }
 }
 
@@ -117,6 +125,10 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  .container-custom {
+    max-width: 1280px;
+    margin: auto;
   }
 }
 
@@ -133,11 +145,6 @@ section {
 
 .slider-r-deals::-webkit-scrollbar {
   display: none;
-}
-
-.container-custom {
-  max-width: 1280px;
-  margin: 0 auto;
 }
 
 .section-benefit {
