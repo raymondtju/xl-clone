@@ -10,9 +10,9 @@ class Navbar extends HTMLElement {
         <div class="firstNav">
           <div class="container">
             <ul>
-              <li style="font-weight: 600;">Personal</li>
-              <li>Bisnis</li>
-              <li>Perusahaan</li>
+              <li style="font-weight: 600;">Personal</a></li>
+              <li><a href="#">Bisnis</a></li>
+              <li><a href="#">Perusahaan</a></li>
             </ul>
           </div>
         </div>
@@ -35,12 +35,12 @@ class Navbar extends HTMLElement {
             </div>
 
             <ul>
-              <li>XL Store</li>
-              <li>Produk</li>
-              <li>FUN</li>
-              <li>Promo</li>
-              <li>Layanan Kartu SIM</li>
-              <li>Bantuan</li>
+              <li><a href="#">XL Store</a></li>
+              <li><a href="#">Produk</a></li>
+              <li><a href="#">FUN</a></li>
+              <li><a href="#">Promo</a></li>
+              <li><a href="#">Layanan Kartu SIM</a></li>
+              <li><a href="#">Bantuan</a></li>
             </ul>
           </div>
         </div>

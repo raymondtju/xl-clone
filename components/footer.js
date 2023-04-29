@@ -84,52 +84,60 @@ class Footer extends HTMLElement {
                 <h3>Produk</h3>
                 <ul>
                   <li>
-                    <img
-                      src="https://web-xlrvmnpr.s3.ap-southeast-1.amazonaws.com/images/post/e54cd370-04c1-4dfe-b9c0-fe44e0624355.jpg"
-                      alt=""
-                    />
+                    <a href="#">
+                      <img
+                        src="https://web-xlrvmnpr.s3.ap-southeast-1.amazonaws.com/images/post/e54cd370-04c1-4dfe-b9c0-fe44e0624355.jpg"
+                        alt=""
+                      />
+                    </a>
                   </li>
                   <li>
-                    <img
-                      src="https://web-xlrvmnpr.s3.ap-southeast-1.amazonaws.com/images/post/cc008afa-60bc-4aba-84fe-5a0bf9aeabde.jpg"
-                      alt=""
-                    />
+                    <a href="#">
+                      <img
+                        src="https://web-xlrvmnpr.s3.ap-southeast-1.amazonaws.com/images/post/cc008afa-60bc-4aba-84fe-5a0bf9aeabde.jpg"
+                        alt=""
+                      />
+                    </a>
                   </li>
                   <li>
+                    <a href="#">
                     <img
                       src="https://web-xlrvmnpr.s3.ap-southeast-1.amazonaws.com/images/post/d68871ba-6d30-4627-b8e8-cb2bf936353f.jpg"
                       alt=""
                     />
+                    </a>
                   </li>
                   <li>
-                    <img
-                      src="https://web-xlrvmnpr.s3.ap-southeast-1.amazonaws.com/images/post/1e544e4a-79f1-4b38-8f0b-58bc07ba02e6.jpg"
-                      alt=""
-                    />
+                    <a href="#">
+                      <img
+                        src="https://web-xlrvmnpr.s3.ap-southeast-1.amazonaws.com/images/post/1e544e4a-79f1-4b38-8f0b-58bc07ba02e6.jpg"
+                        alt=""
+                      />
+                    </a>
                   </li>
                 </ul>
               </div>
               <div class="footer-card">
                 <h3>Services</h3>
                 <ul>
-                  <li>myXL</li>
-                  <li>myRewards</li>
-                  <li>Ring Back Tone</li>
-                  <li>Carrier Billing</li>
-                  <li>Bagi Pulsa</li>
-                  <li>Pulsa Siaga</li>
+                  <li><a href="#">myXL</a></li>
+                  <li><a href="#">myRewards</a></li>
+                  <li><a href="#">Ring Back Tone</a></li>
+                  <li><a href="#">Carrier Billing</a></li>
+                  <li><a href="#">Bagi Pulsa</a></li>
+                  <li><a href="#">Pulsa Siaga</a></li>
                 </ul>
               </div>
               <div class="footer-card">
                 <h3>Jelajahi</h3>
                 <ul>
-                  <li>Promo</li>
-                  <li>FUN</li>
-                  <li>Registrasi Kartu</li>
-                  <li>Pilih Nomor Sendiri</li>
-                  <li>Kartu 4G</li>
-                  <li>Cek Masa Aktif</li>
-                  <li>Bantuan</li>
+                  <li><a href="#">Promo</a></li>
+                  <li><a href="#">FUN</a></li>
+                  <li><a href="#">Registrasi Kartu</a></li>
+                  <li><a href="#">Pilih Nomor Sendiri</a></li>
+                  <li><a href="#">Kartu 4G</a></li>
+                  <li><a href="#">Cek Masa Aktif</a></li>
+                  <li><a href="#">Bantuan</a></li>
                 </ul>
               </div>
             </div>
