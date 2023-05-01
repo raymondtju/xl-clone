@@ -351,6 +351,9 @@ section {
   border-radius: 20px;
 }
 
+.section-pulau {
+  padding: 50px 0px;
+}
 .section-pulau .container-custom .row {
   display: flex;
   justify-content: space-between;
@@ -358,9 +361,7 @@ section {
 .section-pulau .container-custom .row .col:first-child {
   flex: 1;
   padding-top: 80px;
-
 }
-
 .section-pulau .container-custom .row .col:last-child {
   flex: 2;
 }
