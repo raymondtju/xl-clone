@@ -24,6 +24,18 @@ a {
   color: #ffff;
 }
 
+hr {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  border: 0;
+  border-top: 1px solid rgba(0,0,0,.05);
+}
+
+.fw-bold {
+  font-weight: 700;
+  color: #000 !important;
+}
+
 .secNav ul li a, .firstNav .container ul li a {
   color: #000 !important;
 }
@@ -37,6 +49,20 @@ h3 {
 h2 {
   font-weight: 600;
   font-size: 36px;
+}
+
+h4 {
+  font-size: 20px;
+
+}
+
+h6 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 5;
+  line-height: 32px;
+  color: #333333;
+  margin-bottom: 10px;
 }
 
 .text-center {
@@ -61,7 +87,7 @@ button {
 button:hover {
   /* filter: drop-shadow(0 10px 15px rgb(0 0 0 / 0.3)); */
   box-shadow: 0 20px 30px -6px #336dcd1a, 0 0 1px 0 #336dcd33;
-  transform: translateY(-2px);
+  transform: translateY(-3px);
 }
 
 section {
@@ -130,6 +156,11 @@ section {
     max-width: 1280px;
     margin: auto;
   }
+
+  .card-container {
+    overflow-x: auto;
+    width: 1440px;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -177,7 +208,7 @@ section {
   margin-bottom: 40px;
 }
 
-.section-benefit .container-custom .package-xtra {
+.package-xtra {
   display: flex;
   flex-direction: row; 
   justify-content: space-between;
@@ -237,4 +268,99 @@ section {
   font-size: 18px;
   color: #b3b3b3;
   opacity: 90%;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  overflow-x: auto;
+  padding-bottom: 10px;
+
+}
+
+.card-container .card {
+  width: calc(25% - 26px);
+  box-sizing: border-box;
+  transition: 300ms;
+  padding: 20px 16px;
+  margin-top: 82px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px rgba(51, 109, 205, 0.1), 0px 5px 8px -2px rgba(51, 109, 205, 0.1);
+  border-radius: 12px;
+}
+
+.card-container .card:hover {
+  transform: translateY(-3px);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(51, 109, 205, 0.1), 0px 20px 30px -6px rgba(51, 109, 205, 0.1);
+}
+
+.card-container .card .list-kuota {
+  margin: 6px 0px !important;
+}
+
+.card-container .card .list-kuota .text-list {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.card-container .card .list-kuota .text-list p {
+  margin-bottom: 0px;
+}
+
+.card-container .card .card-footer {
+  text-align: end;
+}
+
+.section-olshop {
+  width: 100%;
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(-116.18%,#efefef),color-stop(35.25%,rgba(223,230,243,0)));
+  background: -webkit-linear-gradient(top,#efefef -116.18%,rgba(223,230,243,0) 35.25%);
+  background: linear-gradient(180deg,#efefef -116.18%,rgba(223,230,243,0) 35.25%);
+  padding: 50px 0;
+  text-align: center;
+}
+
+.accordion-container {
+  width: 100%;
+  margin: 0 auto;
+  
+}
+
+.accordion {
+  margin-bottom: 15px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px rgba(0, 45, 187, 0.15);
+  padding-left: 18px;
+  padding-top: 20px;
+}
+
+.accordion-header {
+  background-color: #fff;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.accordion-body {
+  padding: 10px;
+  display: none;
+  border-radius: 20px;
+}
+
+.section-pulau .container-custom .row {
+  display: flex;
+  justify-content: space-between;
+}
+.section-pulau .container-custom .row .col:first-child {
+  flex: 1;
+  padding-top: 80px;
+
+}
+
+.section-pulau .container-custom .row .col:last-child {
+  flex: 2;
 }
