@@ -19,6 +19,7 @@
   width: 99%;
   background-color: #fff;
   margin-top: -65px;
+  z-index: 2;
 }
 
 .navbar-store .number-step {
@@ -47,7 +48,6 @@
 main {
  background-color: #EEEEEE;
  margin-top: 65px;
- height: 9999px;
 }
 
 main .content {
@@ -293,6 +293,54 @@ main .content {
   transform: rotate(180deg);
 }
 
+.badge {
+  width: 133px; 
+  height: 62px; 
+  position: relative; 
+  left: calc(100% - 271px);
+}
 
 
+@media only screen and (max-width: 447px) {
+  .badge {
+    width: 133px; 
+    height: 62px; 
+    position: relative; 
+    left: calc(100% - 219px);
+  }
+}
 
+.button-next {
+  padding-left: 4em;
+  padding-right: 4em;
+}
+.button-next .btn {
+  padding: 13px;
+  width: 100%;
+  background-color: #D9D9D9;
+  border-radius: 24px;
+  border: none;
+  color: #ffff;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27.24px;
+}
+
+.footer {
+  background-color: #00D2A0;
+  text-align: center;
+  padding: 12px;
+  color: #fff;
+}
+
+.footer p:last-child {
+  margin-bottom: 5px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.footer p:last-child {
+  margin: 0px;
+  margin-bottom: 5px;
+  padding: 0px;
+}

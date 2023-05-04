@@ -339,10 +339,13 @@ section {
 
 .accordion-header {
   background-color: #fff;
-  padding: 10px;
+  padding: 5px 40px 10px 10px;
   font-weight: bold;
   cursor: pointer;
   border-radius: 20px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
 }
 
 .accordion-body {
@@ -365,3 +368,10 @@ section {
 .section-pulau .container-custom .row .col:last-child {
   flex: 2;
 }
+
+/* .section-pulau .container-custom .row .col .accordion-container .accordion::after {
+  content: "\2304";
+  color: gray;
+  font-weight: bold;
+  font-size: 50px;
+} */
