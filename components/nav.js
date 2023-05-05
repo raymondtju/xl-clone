@@ -11,8 +11,8 @@ class Navbar extends HTMLElement {
           <div class="container">
             <ul>
               <li style="font-weight: 600;">Personal</a></li>
-              <li><a href="#">Bisnis</a></li>
-              <li><a href="#">Perusahaan</a></li>
+              <li><a href="#" style="color: #ffff !important;">Bisnis</a></li>
+              <li><a href="#" style="color: #ffff !important;">Perusahaan</a></li>
             </ul>
           </div>
         </div>
